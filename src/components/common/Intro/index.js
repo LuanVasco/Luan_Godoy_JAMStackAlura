@@ -14,7 +14,7 @@ export default function Intro() {
         <Button>See more</Button>
       </IntroWrapper.LeftSide>
       <IntroWrapper.RightSide>
-        <img src="http://localhost:3000/images/person.svg" alt="Pessoa usando notebook"/>
+        <img src="https://luan-godoy-jams-tack-alura.vercel.app/images/person.svg" alt="Pessoa usando notebook"/>
       </IntroWrapper.RightSide>
     </IntroWrapper>
   );

@@ -16,7 +16,7 @@ ProjectWrapper.Title = styled.header`
     font-weight: 700;
   }
   h2::after {
-    content: url('http://localhost:3000/images/line.svg');
+    content: url('https://luan-godoy-jams-tack-alura.vercel.app/images/line.svg');
     display: block;
     text-align: center;
     margin-top: -15px;

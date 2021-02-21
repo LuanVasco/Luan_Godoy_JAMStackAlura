@@ -6,7 +6,7 @@ export const IntroWrapper = styled.section`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-image: url('http://localhost:3000/images/intro-desktop.svg');
+  background-image: url('https://luan-godoy-jams-tack-alura.vercel.app/images/intro-desktop.svg');
   background-repeat: no-repeat;
   background-position: right;
 `;

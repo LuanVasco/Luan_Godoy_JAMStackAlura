@@ -19,7 +19,7 @@ AboutWrapper.Content = styled.div`
     color: ${({ theme }) => theme.colors.primary.main.contrastText};
   }
   h2::after {
-    content: url('http://localhost:3000/images/line.svg');
+    content: url('https://luan-godoy-jams-tack-alura.vercel.app/images/line.svg');
     display: block;
     text-align: left;
     margin-top: -15px;

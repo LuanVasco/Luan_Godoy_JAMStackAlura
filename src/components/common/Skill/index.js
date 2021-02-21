@@ -5,37 +5,37 @@ import { Text } from '../../foundation/Text';
 const cards = [
   {
     url: 'HTML + Css',
-    icon: 'http://localhost:3000/images/landingpage.svg',
+    icon: 'https://luan-godoy-jams-tack-alura.vercel.app//images/landingpage.svg',
     title: 'HTML + Css',
     resume: 'Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ',
   },  
   {
     url: 'Javascript',
-    icon: 'http://localhost:3000/images/game.svg',
+    icon: 'https://luan-godoy-jams-tack-alura.vercel.app//images/game.svg',
     title: 'Javascript',
     resume: 'Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ',
   },  
   {
     url: 'ReactJs',
-    icon: 'http://localhost:3000/images/quiz.svg',
+    icon: 'https://luan-godoy-jams-tack-alura.vercel.app//images/quiz.svg',
     title: 'ReactJs',
     resume: 'Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ',
   },  
   {
     url: 'Adobe XD',
-    icon: 'http://localhost:3000/images/landingpage.svg',
+    icon: 'https://luan-godoy-jams-tack-alura.vercel.app/images/landingpage.svg',
     title: 'Adobe XD',
     resume: 'Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ',
   },  
   {
     url: 'NextJs',
-    icon: 'http://localhost:3000/images/quiz.svg',
+    icon: 'https://luan-godoy-jams-tack-alura.vercel.app/images/quiz.svg',
     title: 'NextJs',
     resume: 'Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ',
   },  
   {
     url: 'Wordpress',
-    icon: 'http://localhost:3000/images/landingpage.svg',
+    icon: 'https://luan-godoy-jams-tack-alura.vercel.app/images/landingpage.svg',
     title: 'Wordpress',
     resume: 'Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ',
   }, 

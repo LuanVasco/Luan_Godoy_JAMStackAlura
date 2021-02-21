@@ -5,7 +5,7 @@ export default function About() {
   return (
     <AboutWrapper>
       <AboutWrapper.Image>
-        <img src="http://localhost:3000/images/about.svg" alt=""/>
+        <img src="https://luan-godoy-jams-tack-alura.vercel.app/images/about.svg" alt=""/>
       </AboutWrapper.Image>
       <AboutWrapper.Content>
         <h4>About</h4>

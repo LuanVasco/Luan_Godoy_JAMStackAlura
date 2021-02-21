@@ -5,12 +5,12 @@ import Link from 'next/link';
 export const medias = [
   {
     alt: 'Github',
-    icon: 'http://localhost:3000/images/github.svg',
+    icon: 'https://luan-godoy-jams-tack-alura.vercel.app/images/github.svg',
     url: 'https://github.com/LuanVasco',
   },
   {
     alt: 'Linkedin',
-    icon: 'http://localhost:3000/images/linkedin.svg',
+    icon: 'https://luan-godoy-jams-tack-alura.vercel.app/images/linkedin.svg',
     url: 'https://www.linkedin.com/in/luan-godoy-483090161/',
   },
 ]
