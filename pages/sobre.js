@@ -2,7 +2,7 @@ import React from 'react';
 import GlobalStyle from '../src/components/theme/GlobalStyle';
 import Intro from '../src/components/common/Intro';
 import Menu from '../src/components/common/Menu';
-import Project from '../src/components/common/Project';
+import About from "../src/components/common/About";
 import Footer from "../src/components/common/Footer";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <GlobalStyle />
       <Intro />
       <Menu />
-      <Project />
+      <About />
       <Footer />
     </div>
   );
