@@ -11,7 +11,7 @@ export const IntroWrapper = styled.section`
   background-repeat: no-repeat;
   ${breakpointsMedia({
     xs: css`
-      background-image: url('http://localhost:3000/images/intro-mobile.svg');
+      background-image: url('http://luan-godoy-jams-tack-alura.vercel.app/images/intro-mobile.svg');
       background-position: bottom;
     `,
     md: css`
