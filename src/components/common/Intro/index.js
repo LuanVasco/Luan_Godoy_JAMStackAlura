@@ -1,6 +1,6 @@
 import React from 'react';
 import { IntroWrapper } from './style/IntroWrapper';
-import { Text } from '../../foundation/Text';
+import Text from '../../foundation/Text';
 import { Button } from '../Button'
 
 export default function Intro() {
@@ -8,9 +8,9 @@ export default function Intro() {
     <IntroWrapper>
       <IntroWrapper.LeftSide>
         <header>
-          <Text><span>Hello,</span> I'm<br/> Luan Godoy</Text>
+          <Text tag="h1" variant="title"><span>Hello,</span> I'm<br/> Luan Godoy</Text>
         </header>
-        <p>I'm Front End Developer</p>
+        <Text tag="p" variant="paragraph1">I'm a Front End Developer</Text>
         <Button>See more</Button>
       </IntroWrapper.LeftSide>
       <IntroWrapper.RightSide>

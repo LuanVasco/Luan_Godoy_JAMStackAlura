@@ -1,6 +1,6 @@
 import React from 'react';
 import { SkillWrapper } from './style/SkillWrapper';
-import { Text } from '../../foundation/Text';
+import Text from '../../foundation/Text';
 
 const cards = [
   {
@@ -45,24 +45,24 @@ export default function Project() {
   return (
     <SkillWrapper>
       <SkillWrapper.Title>
-        <h4>Habilidades</h4>
-        <h2>Minhas skills</h2>
+      <Text tag="h4" variant="paragraph1">Habilidades</Text>
+      <Text tag="h2" variant="subTitle">Minhas skills</Text>
       </SkillWrapper.Title>
       <SkillWrapper.CardGroup>
         {cards.map((card) => (
           <SkillWrapper.Card key={card.url}>
             <span></span>
-            <a href={card.url} target="_blank">
+            <Text tag="a" href="#">
               <SkillWrapper.CardText>
                 <div>
                   <img src={card.icon} alt=""/>
                 </div>
                 <header>
-                  <h3>{card.title}</h3>
-                  <p>{card.resume}</p>
+                  <Text tag="h3" variant="paragraph1">{card.title}</Text>
                 </header>
+                <Text tag="p" variant="smallestException">{card.resume}</Text>
               </SkillWrapper.CardText>
-            </a>
+            </Text>
           </SkillWrapper.Card>
         ))}
       </SkillWrapper.CardGroup>

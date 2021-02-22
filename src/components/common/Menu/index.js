@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuWrapper } from './styles/MenuWrapper';
 import { Logo } from '../../theme/Logo';
-import Link from 'next/link';
+import Text from '../../foundation/Text';
 
 const links = [
   {
@@ -30,12 +30,15 @@ export default function Menu() {
         {links.map((link) => {
           return (
             <li key={link.url}>
-              <Link href={link.url}>
-              <a>{link.text}</a>
-              </Link>
+              <Text 
+                href={link.url}
+                tag="a" 
+                variant="paragraph1" 
+              >
+                {link.text}
+              </Text>
             </li>
-          )
-        })}
+        )})}
       </MenuWrapper.RightSide>
     </MenuWrapper>
   );

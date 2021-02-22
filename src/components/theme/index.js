@@ -63,8 +63,15 @@ const colors = {
 };
 
 export default {
-  colors,
+  breakpoints: {
+    xs: 0,
+    sm: 480,
+    md: 768,
+    lg: 992,
+    xl: 1200,
+  },
   borderRadius: '15px',
-  typographyVariants,
+  colors,
   fontFamily: '\'Poppins\', sans-serif',
+  typographyVariants,
 };

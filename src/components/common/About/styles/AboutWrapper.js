@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { TextStyleVariantsMap } from '../../../foundation/Text';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 export const AboutWrapper = styled.section`
   display: flex;
@@ -6,33 +8,47 @@ export const AboutWrapper = styled.section`
   align-items: center;
   flex-wrap: wrap;
   width: 80%;
-  margin: 40px auto;
+  margin: 60px auto;
 `;
 
 AboutWrapper.Image = styled.div`
-  
+  ${breakpointsMedia({
+    xs: css`
+      width: 100%;
+    `,
+    md: css`
+      width: 50%;
+    `,
+  })}
 `;
 AboutWrapper.Content = styled.div`
-  h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: ${({ theme }) => theme.colors.primary.main.contrastText};
-  }
+  ${breakpointsMedia({
+    xs: css`
+      width: 100%;
+    `,
+    md: css`
+      width: 45%;
+    `,
+  })}
+  h2 { color: ${({ theme }) => theme.colors.primary.main.contrastText}; }
   h2::after {
     content: url('https://luan-godoy-jams-tack-alura.vercel.app/images/line.svg');
     display: block;
     text-align: left;
     margin-top: -15px;
   }
-  h4 {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
+  h4 { margin: 0;
     color: ${({ theme }) => theme.colors.primary.main.contrastText};
   }
   p {
-    font-size: 14px;
-    font-weight: 400;
+    ${breakpointsMedia({
+    xs: css`
+      ${TextStyleVariantsMap.smallestException}
+    `,
+    md: css`
+      ${TextStyleVariantsMap.paragraph1}
+    `,
+  })}
     color: ${({ theme }) => theme.colors.primary.main.contrastText};
   }
 `;

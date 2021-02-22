@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
+import { TextStyleVariantsMap } from '../../../foundation/Text';
 
 export const MenuWrapper = styled.nav`
   display: flex;
@@ -6,15 +8,34 @@ export const MenuWrapper = styled.nav`
   align-items: center;
   padding: 18px 0;
   background: #300F33;
+  svg {
+    ${breakpointsMedia({
+      xs: css`
+        display: none;
+      `,
+      md: css`
+        display: block;
+      `,
+    })}
+  }
 `;
 
 MenuWrapper.RightSide = styled.div`
   display: flex;
   list-style: none;
   a {
-    font-size: 18px;
-    color: #fff;
     text-decoration: none;
-    margin: 0 18px;
+    ${breakpointsMedia({
+      xs: css`
+        margin: 0 8px;
+        overflow-x: scroll;
+        ${TextStyleVariantsMap.paragraph2}
+      `,
+      md: css`
+        margin: 0 18px;
+        ${TextStyleVariantsMap.paragraph1}
+      `,
+    })}
+    color: ${({ theme }) => theme.colors.primary.main.contrastText};
   }
 `;

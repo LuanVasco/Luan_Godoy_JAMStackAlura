@@ -11,21 +11,13 @@ SkillWrapper.Title = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h2 {
-    font-size: 32px;
-    font-weight: 700;
-  }
   h2::after {
     content: url('https://luan-godoy-jams-tack-alura.vercel.app/images/line.svg');
     display: block;
     text-align: center;
     margin-top: -15px;
   }
-  h4 {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-  }
+  h4 { margin: 0; }
 `;
 
 SkillWrapper.CardGroup = styled.div`
@@ -39,11 +31,9 @@ SkillWrapper.CardGroup = styled.div`
 SkillWrapper.Card = styled.div`
   position: relative;
   margin: 18px;
-
   transition: ease-in .3s;
   border-radius: ${({ theme }) => theme.borderRadius};
   z-index: 20;
-  
   &:hover span{
     display: block;
     animation: in .5s forwards;
@@ -69,7 +59,9 @@ SkillWrapper.Card = styled.div`
       animation: out .5s;
     }
   }
-
+  a:hover {
+    color:  ${({ theme }) => theme.colors.quintenary.main.contrastText};
+  }
 `;
 
 SkillWrapper.CardText = styled.div`
@@ -79,14 +71,12 @@ SkillWrapper.CardText = styled.div`
   max-height: 290px;
   background-image: linear-gradient(135deg, #17001A, #300F33);
   box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.16);
-
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   padding: 8px 12px;
   border-radius: ${({ theme }) => theme.borderRadius};
-  
 
   div {
     background: ${({ theme }) => theme.colors.quintenary.main.color};
@@ -97,16 +87,12 @@ SkillWrapper.CardText = styled.div`
     justify-content: center;
     align-items: center;
     margin: 18px 0;
-   
   }
   h3 {
-    font-size: 18px;
-    font-weight: 500;
     margin-bottom: 18px;
     color: ${({ theme }) => theme.colors.quintenary.main.contrastText};
   }
   p {
-    font-size: 12px;
     color: ${({ theme }) => theme.colors.quintenary.main.contrastText};
   }
 `;

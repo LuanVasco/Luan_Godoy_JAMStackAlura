@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
+import { TextStyleVariantsMap } from '../../../foundation/Text';
 
 export const IntroWrapper = styled.section`
   min-height: 100vh;
@@ -6,16 +8,46 @@ export const IntroWrapper = styled.section`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-image: url('https://luan-godoy-jams-tack-alura.vercel.app/images/intro-desktop.svg');
   background-repeat: no-repeat;
-  background-position: right;
+  ${breakpointsMedia({
+    xs: css`
+      background-image: url('http://localhost:3000/images/intro-mobile.svg');
+      background-position: bottom;
+    `,
+    md: css`
+      background-image: url('https://luan-godoy-jams-tack-alura.vercel.app/images/intro-desktop.svg');
+      background-position: right;
+    `,
+  })}
 `;
 
 IntroWrapper.LeftSide = styled.div`
   margin-top: 20px;
   padding: 0;
   order: 1;
+  color: ${({ theme }) => theme.colors.primary.main.contrastText};
+  h1 {
+    ${breakpointsMedia({
+      xs: css`
+        ${TextStyleVariantsMap.titleXS}
+      `,
+      md: css`
+        ${TextStyleVariantsMap.title}
+      `,
+    })}
+  }
+  span {
+    color: ${({ theme }) => theme.colors.tertiary.main.color};
+  }
   p {
+    ${breakpointsMedia({
+      xs: css`
+        ${TextStyleVariantsMap.paragraph2}
+      `,
+      md: css`
+        ${TextStyleVariantsMap.paragraph1}
+      `,
+    })}
     color: ${({ theme }) => theme.colors.primary.main.contrastText };
     margin-bottom: 18px;
   }
@@ -26,6 +58,14 @@ IntroWrapper.RightSide = styled.div`
   order: 2;
   text-align: center;
   img {
-    width: 80%;
+    
+    ${breakpointsMedia({
+      xs: css`
+        width: 80%;
+      `,
+      md: css`
+        width: 100%;
+      `,
+    })}
   }
 `;

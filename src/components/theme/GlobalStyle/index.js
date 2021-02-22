@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
   ${normalize}
-
+  a { text-decoration: none; }
   html, body {
     margin: 0;
     padding: 0;

@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
+import { TextStyleVariantsMap } from '../../../foundation/Text';
 
 export const ProjectWrapper = styled.section`
   min-height: 100vh;
@@ -11,21 +13,13 @@ ProjectWrapper.Title = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h2 {
-    font-size: 32px;
-    font-weight: 700;
-  }
   h2::after {
     content: url('https://luan-godoy-jams-tack-alura.vercel.app/images/line.svg');
     display: block;
     text-align: center;
     margin-top: -15px;
   }
-  h4 {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0;
-  }
+  h4 { margin: 0; }
 `;
 
 ProjectWrapper.CardGroup = styled.div`
@@ -56,7 +50,7 @@ ProjectWrapper.CardText = styled.div`
   display: flex;
   align-items: center;
   background: rgba(48, 15, 51, .8);
-  padding: 8px 12px;
+  padding: 12px;
   border-radius: 0  0 15px 15px;
   div {
     background: ${({ theme }) => theme.colors.quintenary.main.color};
@@ -72,13 +66,18 @@ ProjectWrapper.CardText = styled.div`
     border-radius: 0;
   }
   h3 {
-    font-size: 18px;
-    font-weight: 500;
     margin-bottom: 4px;
     color: ${({ theme }) => theme.colors.quintenary.main.contrastText};
   }
   p {
-    font-size: 12px;
+    ${breakpointsMedia({
+      xs: css`
+        ${TextStyleVariantsMap.smallestExceptionXS}
+      `,
+      md: css`
+        ${TextStyleVariantsMap.smallestException}
+      `,
+    })}
     color: ${({ theme }) => theme.colors.quintenary.main.contrastText};
   }
 `;
